@@ -1,10 +1,8 @@
-
-
 // TODO: Strong/moderate/weak buy signals based on buy:sell ratio.
 // TODO: Limit graphs to 50 units, cutting off the tail.
 // TODO: State machine indicating candlestick trends, then doji based on prior trend.
 // TODO: RSI or averages?
-// TODO: MySQL database integration?
+// TODO: MySQL database integration.
 
 // Load the Visualization API and the corechart package.
 // Google does not allow you to download the google.charts.load js library.
@@ -294,7 +292,7 @@ $(document).ready(function () {
 //     url: "https://api.binance.com/api/v1/time",
 //     type: "GET",
 //     dataType: "json",
-//     headers: { "X-MBX-APIKEY": "faZVpFqAEIGLrzEwDqt1CsuvJXL1EOtRA1IBgI73kHUAMG1Yw2UikjrX5dsIc4hG" },
+//     headers: { "X-MBX-APIKEY": "<key-here>" },
 //     success: function (data) {
 //         console.log(data)
 //     }

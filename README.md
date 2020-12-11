@@ -5,8 +5,9 @@
 Interfacing with the Binance API via websocket, using AJAX.
 Displays updating k-lines and volume data via Google Charts API.
 
+NOTE: The interval is set to 1 minute. The active k-line will update several times before it settles at the end of the minute. New k-lines are added at the end of each minute.
 
-Example JSON Kline response from Binance.
+Example JSON k-line response from Binance.
 
     "e": "kline",            // Event type
     "E": 1531729092845,      // Event time
@@ -25,13 +26,13 @@ Example JSON Kline response from Binance.
         "v": "4.42800000",       // Base asset volume
                                     Base refers to ETH, quote refers to USDT in ETH/USDT.
                                     This figure is the total volume.
-Kline.v - kline.V = sell volume.
-"n": 12,                 // Number of trades
-"x": false,              // Is this kline closed?
-"q": "2002.03666920",    // Quote asset volume
-"V": "2.99305000",       // Taker buy base asset volume
-This is buy volume
-"Q": "1353.25272570",    // Taker buy quote asset volume
-"B": "0"                 // Ignore
+Kline.v - kline.V = sell volume.<br>
+"n": 12,                 // Number of trades<br>
+"x": false,              // Is this kline closed?<br>
+"q": "2002.03666920",    // Quote asset volume<br>
+"V": "2.99305000",       // Taker buy base asset volume<br>
+This is buy volume<br>
+"Q": "1353.25272570",    // Taker buy quote asset volume<br>
+"B": "0"                 // Ignore<br>
 }
 }

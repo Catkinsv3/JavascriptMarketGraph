@@ -8,23 +8,13 @@
     <meta charset="UTF-8">
 
     <meta name="description"
-          content="Testbed trader">
+          content="Market Graph">
 
     <meta name="author"
-          content="TBD">
-
-    <meta name="keywords"
-          content="">
+          content="Christopher Atkinson">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
-
-    <!-- No favicon yet. Need to design logo.
-    <link rel="icon" type="image/png"	sizes="32x32"
-                href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png"	sizes="16x16"
-                href="/images/favicon-16x16.png">
-    -->
 
     <link rel='stylesheet'
           href='css/style.css'>
@@ -33,14 +23,10 @@
             src="js/loader.js">
     </script>
 
-    <!--<script-->
-    <!--src="https://code.jquery.com/jquery-3.3.1.js"-->
-    <!--integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
-    <!--crossorigin="anonymous"></script>-->
-
-    <script type="text/javascript"
-            src="js/jquery-3.3.0.js">
-    </script>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"></script>
 
     <script type="text/javascript"
             src="js/script.js">
@@ -73,7 +59,9 @@
         <div id="indi2_div"></div>
     </section>
     <section id="logarea">
-        <div id="log">Kline #<span id="updatenum"></span><pre id="kline"></pre></div>
+        <div id="log">Kline #<span id="updatenum"></span>
+            <pre id="kline"></pre>
+        </div>
         <button type="button" id="close">Close connection</button>
     </section>
 </div>
