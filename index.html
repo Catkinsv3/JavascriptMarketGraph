@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+
+    <title>JSTrader</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="description"
+          content="Testbed trader">
+
+    <meta name="author"
+          content="TBD">
+
+    <meta name="keywords"
+          content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <!-- No favicon yet. Need to design logo.
+    <link rel="icon" type="image/png"	sizes="32x32"
+                href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png"	sizes="16x16"
+                href="/images/favicon-16x16.png">
+    -->
+
+    <link rel='stylesheet'
+          href='css/style.css'>
+
+    <script type="text/javascript"
+            src="js/loader.js">
+    </script>
+
+    <!--<script-->
+    <!--src="https://code.jquery.com/jquery-3.3.1.js"-->
+    <!--integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
+    <!--crossorigin="anonymous"></script>-->
+
+    <script type="text/javascript"
+            src="js/jquery-3.3.0.js">
+    </script>
+
+    <script type="text/javascript"
+            src="js/script.js">
+    </script>
+
+</head>
+
+<body>
+
+<div id="container">
+    <header id="header">
+        <div id="time">time</div>
+        <div id="lastprice">last price</div>
+        <div id="volume">volume</div>
+        <div id="doji">doji</div>
+        <div id="trend">trend</div>
+        <div id="rsi">rsi</div>
+        <div id="bollinger">bollinger</div>
+        <div id="sma">sma</div>
+        <div id="latency">Avg tick delay: ?<br>updates/minute: ?</div>
+    </header>
+    <section id="candlestick">
+        <div id="candlestick_div"></div>
+        <!--<p id='window'>0x0</p>-->
+    </section>
+    <section id="indi1">
+        <div id="indi1_div"></div>
+    </section>
+    <section id="indi2">
+        <div id="indi2_div"></div>
+    </section>
+    <section id="logarea">
+        <div id="log">Kline #<span id="updatenum"></span><pre id="kline"></pre></div>
+        <button type="button" id="close">Close connection</button>
+    </section>
+</div>
+
+</body>
+</html>

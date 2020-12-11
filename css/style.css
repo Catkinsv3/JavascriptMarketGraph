@@ -1,0 +1,169 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300italic - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+    url('../fonts/roboto-v18-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-italic - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+    url('../fonts/roboto-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto-v18-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700italic - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+    url('../fonts/roboto-v18-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v18-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@media screen {
+
+    html, body {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+        color: #3fff3f;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    header, section {
+        background-color: #212121;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+                "header header header header"
+                "candlestick candlestick candlestick logarea"
+                "candlestick candlestick candlestick logarea"
+                "indi1 indi1 indi1 logarea"
+                "indi2 indi2 indi2 logarea";
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        grid-area: header;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: "time lastprice volume trend doji rsi bollinger sma latency";
+    }
+
+    #candlestick {
+        grid-area: candlestick;
+        width: 100%;
+        height: 100%;
+    }
+
+    #indi1 {
+        grid-area: indi1;
+        width: 100%;
+        height: 100%;
+    }
+
+    #indi2 {
+        grid-area: indi2;
+        width: 100%;
+        height: 100%;
+    }
+
+    #logarea {
+        grid-area: logarea;
+        width: 100%;
+        height: 100%;
+    }
+
+    #log {
+        text-align: left;
+        overflow-y: scroll;
+        /*width: 100%;*/
+        height: 80%;
+        margin: 10px;
+        padding: 10px;
+        background: #212121;
+        color: #f8e18b;
+        border: 1px solid #3a3a3a;
+    }
+
+    #candlestick_div {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*#indi1_div {*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*border: 1px solid green;*/
+    /*}*/
+
+    /*.indi1 {*/
+        /*!*width: 100%;*!*/
+        /*!*height: 100%;*!*/
+        /*border: 1px solid red;*/
+    /*}*/
+
+}
